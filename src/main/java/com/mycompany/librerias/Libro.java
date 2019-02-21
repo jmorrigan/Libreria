@@ -56,6 +56,30 @@ public class Libro {
         this.compras = transacciones;
     }
 
+     /**
+     *
+     * @param cCantidad
+     * @return
+     */
+    public boolean vender( int cCantidad )
+    {
+        return false;
+        
+    }
+
+    /**
+     *
+     * @param cCantidad
+     */
+    public void llenarStock( int cCantidad )
+    {
+
+    }
+    
+    
+    
+    
+    
     /**
      *
      * @return
@@ -168,24 +192,6 @@ public class Libro {
         this.compras = compras;
     }
 
-    /**
-     *
-     * @param cCantidad
-     * @return
-     */
-    public boolean vender( int cCantidad )
-    {
-        return false;
-        
-    }
-
-    /**
-     *
-     * @param cCantidad
-     */
-    public void llenarStock( int cCantidad )
-    {
-
-    }
+   
 
 }
