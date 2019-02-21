@@ -16,28 +16,52 @@ import java.util.ArrayList;
  */
 public class Libro {
     
+    /**
+     * variable tipo String para guardar el codigo del libro
+     */
+    
     private String Codigo;
 
-   
+   /**
+     * variable tipo String para guardar el titulo del libro
+     */
+    
     private String tituloDeLibro;
     
+    /**
+     * variable tipo String para guardar el o los autores del libro
+     */
     
     private String autoresLibro;
 
+    /**
+     * variable tipo Double para guardar el precio para la venta del libro
+     */
     
     private double precioVenta;
+    
+    /**
+     * variable tipo Double para guardar el precio para la compra del libro al proveedor
+     */
 
     
     private double precioCompra;
 
+    
+    /**
+     * variable tipo int para guardar la cantidad del libro en stock
+     */
    
     private int cantidadActual;
 
+    /**
+     * variable tipo ArrayList para guardar los libros que se compren o se vendan para llenar stock
+     */
     
     private ArrayList<Compra> compras;
 
     /**
-     *
+     *Constructor de la clase
      * @param Codigo
      * @param TituloLibro
      * @param autoresLibro
@@ -57,7 +81,7 @@ public class Libro {
     }
 
      /**
-     *
+     *Metodo para vender el libro recibiendo como parametro la cantidad
      * @param cCantidad
      * @return
      */
@@ -68,7 +92,7 @@ public class Libro {
     }
 
     /**
-     *
+     *Metodo para llenar el stock de dicho libro recibiendo como parametro la cantidad
      * @param cCantidad
      */
     public void llenarStock( int cCantidad )

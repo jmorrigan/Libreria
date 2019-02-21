@@ -20,24 +20,34 @@ public class Compra {
     public enum Compras{
 
         /**
-         *
+         *variable de seleccion para saber que tipo de transaccion se hará
          */
         comprarLibros,
 
         /**
-         *
+         *variable de seleccion para saber que tipo de transaccion se hará
          */
         venderLibros;
         }
     
+    /**
+    *variable de seleccion para saber que tipo de transaccion se hará
+    */
+    
     private Compras tipo;
+    
+    
+     /**
+    *variable entera para definir la cantidad de libros que se venderán o comprarán
+    */
+    
 
     private int cantidad;
 
     /**
      *
-     * @param tipo
-     * @param cantidad
+     * @param tipo caracteristica de la transaccion
+     * @param cantidad cantidad de libros que se venden o compran segun lo que se desea
      */
     public Compra(Compras tipo, int cantidad) {
         

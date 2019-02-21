@@ -16,12 +16,19 @@ import java.util.ArrayList;
  */
 public class Stock {
      
+    /**
+     *Listado de libros para guardar en la variable catalogo
+     */
     private ArrayList<Libro> catalogo;
 
+    /**
+     * variable tipo double para definir el valor en caja
+     */
+    
     private double caja;
 
     /**
-     *
+     *constructor de la clase donde se crea la variable catalogo para guardar los objetos Libro y se inicializa la variable con un valor determinado 100000
      */
     public Stock( )
     {
@@ -30,8 +37,8 @@ public class Stock {
     }
 
     /**
-     *
-     * @param cCaja
+     *Metodo para incrementar o decrementar caja respecto a las transacciones ya sean compras o ventas
+     * @param cCaja parametro a recibir del metodo
      */
     public void cambiarCaja( double cCaja )
     {
@@ -39,8 +46,8 @@ public class Stock {
     }
 
     /**
-     *
-     * @param tituloLibro
+     *Metodo para buscar el libro por el titulo
+     * @param tituloLibro parametro a recibir del metodo
      * @return
      */
     public Libro buscarLibroPorTitulo( String tituloLibro )
@@ -51,8 +58,8 @@ public class Stock {
     }
 
     /**
-     *
-     * @param codigo
+     *Metodo para buscar el libro por la clave
+     * @param codigo parametro tipo string que recibirá el metodo
      * @return
      */
     public Libro buscarClaveLibro( String codigo )
@@ -62,7 +69,7 @@ public class Stock {
     }
 
     /**
-     *
+     *Metodo para agregar el libro con sus atributos
      * @param tituloLibro
      * @param codigoLibro
      * @param precioVentaLibro
@@ -77,7 +84,7 @@ public class Stock {
     }
 
     /**
-     *
+     *Metodo para eliminar el libro recibiendo el parametro clave para encontrarlo
      * @param codigo
      * @return
      */
@@ -88,7 +95,7 @@ public class Stock {
     }
 
     /**
-     *
+     *Metodo para surtir el stock de libros recibiendo como parametro el codigo de los libros y la cantidad a ingresar 
      * @param codigo
      * @param cantidad
      * @return
@@ -100,7 +107,7 @@ public class Stock {
     }
 
     /**
-     *
+     *Metodo para vender cierta cantidad de libros recibiendo como parametro el codigo y la cantidad a vender
      * @param codigo
      * @param cantidad
      * @return
@@ -112,7 +119,7 @@ public class Stock {
     }
 
     /**
-     *
+     *Metodo para saber cual es el libro mas costoso en el stock, no recibe parametros
      * @return
      */
     public Libro libroMasCostoso( )
@@ -122,7 +129,7 @@ public class Stock {
     }
 
     /**
-     *
+     *Metodo para saber que libro es el mas vendido del stock, no recibe parametros
      * @return
      */
     public Libro darLibroMasVendido( )
